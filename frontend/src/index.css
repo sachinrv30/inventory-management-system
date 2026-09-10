@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  --bg-app: #f8fafc;
+  --bg-ambient: radial-gradient(circle at 90% 10%, rgba(99, 102, 241, 0.08) 0%, transparent 45%), 
+                radial-gradient(circle at 10% 90%, rgba(168, 85, 247, 0.06) 0%, transparent 45%);
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent-indigo: #6366f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-app);
+  background-image: var(--bg-ambient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Elite SaaS Card Styling with Soft Depth & Hover Lift */
+.zoho-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoho-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.12);
+  transform: translateY(-3px);
+}
+
+/* Modern Rounded Icon Badge with Soft Glow */
+.icon-badge {
+  border-radius: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Monospace Numbers for Financial Clarity */
+.metric-number {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+input, select {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
+  border-radius: 14px !important;
+  padding: 0.7rem 1.1rem !important;
+  font-size: 0.9rem !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12) !important;
+}
+
+input.search-input {
+  padding-left: 2.6rem !important;
+  padding-right: 3.5rem !important;
+}
