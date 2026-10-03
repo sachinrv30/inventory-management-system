@@ -120,7 +120,3 @@ npm run dev
 ### Developed with 💻 by **Sachin R V**
 
 *MCA Student | REVA University, Bengaluru*
-
-```
-
-```# inventory-management-system
